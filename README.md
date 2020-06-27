@@ -1,4 +1,5 @@
-By Blake Felt - blake.w.felt@gmail.com
+Edit by chainsx - chainsx@outlook.com
+Thank Blake Felt - blake.w.felt@gmail.com
 
 Bedrock Proxy
 =============
@@ -12,8 +13,18 @@ Tested on Linux, should work out of the box on macOS.
 Compiling
 =========
 
-Requires gcc and make. Edit the SERVER_PORT and SERVER_ADDR to the desired values
-in main.c. Then compile with `make` in the terminal.
+Requires gcc and make. Then compile with `make` in the terminal.
+
+Configuring
+=========
+You can simply edit the `bedrock-proxy.conf`.
+```
+MAX_CLIENTS 40 
+TIMEOUT 15 // seconds
+CLIENT_PORT 19132 // port that the Xbox One attempts to connect to, do not change
+SERVER_PORT 19132
+SERVER_ADDR "exampleserver.com"
+```
 
 Running
 =======
